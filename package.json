@@ -9,6 +9,7 @@
     "lint": "eslint webapp",
     "build": "rimraf dist && ui5 build --a",
     "proxy": "node proxy.js",
+    "doc": "jsdoc -c jsdoc.json",
     "dev": "concurrently \"npm run start\" \"npm run proxy\""
   },
   "dependencies": {
@@ -19,10 +20,24 @@
     "@openui5/themelib_sap_fiori_3": "^1"
   },
   "devDependencies": {
-    "@ui5/cli": "^1.0.0",
+    "@openui5/ts-types": "^1.60.5",
+    "@ui5/cli": "^2.0.1",
     "concurrently": "^5.2.0",
     "cors-anywhere": "^0.4.3",
     "eslint": "^4.19.1",
-    "rimraf": "^2.6.2"
+    "jsdoc": "^3.6.4",
+    "rimraf": "^2.6.2",
+    "ui5-middleware-livereload": "^0.3.0",
+    "ui5-middleware-servestatic": "^0.3.0",
+    "ui5-middleware-simpleproxy": "^0.3.0",
+    "ui5-task-transpile": "^0.1.7"
+  },
+  "ui5": {
+    "dependencies": [
+      "ui5-task-transpile",
+      "ui5-middleware-simpleproxy",
+      "ui5-middleware-livereload",
+      "ui5-middleware-servestatic"
+    ]
   }
 }

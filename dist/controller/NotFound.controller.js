@@ -1,0 +1,1 @@
+"use strict";sap.ui.define(["./BaseController"],function(t){"use strict";return t.extend("sap.ui.demo.orderbrowser.controller.NotFound",{onInit:function t(){this.getRouter().getTarget("notFound").attachDisplay(this._onNotFoundDisplayed,this)},_onNotFoundDisplayed:function t(){this.getModel("appView").setProperty("/layout","OneColumn")}})});

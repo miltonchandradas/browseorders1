@@ -25,6 +25,18 @@ sap.ui.define([
 		 * @public
 		 */
 		onInit : function () {
+
+			const myInfo = {
+				firstName: "Milton",
+				city: "Atlanta"
+			};
+
+			const hobbies = ["tennis", "soccer", "chess"];
+
+			let myModifiedInfo = {...myInfo, lastName: "Chandradas", hobbies};
+
+			console.log(myModifiedInfo);
+			
 			// Control state model
 			var oList = this.byId("list"),
 				oViewModel = this._createViewModel(),

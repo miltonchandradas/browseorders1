@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5","sap/ui/demo/orderbrowser/localService/mockserver"],function(e,t){"use strict";return e.extend("sap.ui.demo.orderbrowser.test.integration.pages.Common",{getEntitySet:function(e){return t.getMockServer().getEntitySetData(e)}})});

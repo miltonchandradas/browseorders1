@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/Opa5","./arrangements/Startup","./MasterJourney","./NotFoundJourney"],function(e,t){"use strict";e.extendConfig({arrangements:new t,viewNamespace:"sap.ui.demo.orderbrowser.view.",autoWait:true})});
